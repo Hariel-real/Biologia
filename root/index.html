@@ -1,1 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árbol de la Vida - Clasificación Taxonómica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .dominio {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .reino {
+            background: linear-gradient(135deg, #3742fa, #2f3542);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 15px 0 15px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .grupo {
+            background: linear-gradient(135deg, #26d0ce, #1dd1a1);
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0 10px 40px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .subgrupo {
+            background: linear-gradient(135deg, #ffa726, #ff7043);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 8px 0 8px 60px;
+            font-weight: bold;
+        }
+        .ejemplo {
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 10px;
+            margin: 8px 0 8px 80px;
+            border-radius: 0 5px 5px 0;
+        }
+        .cientifico {
+            font-style: italic;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .vulgar {
+            color: #555;
+            font-weight: normal;
+        }
+        .caracteristicas {
+            background: #e3f2fd;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #1976d2;
+        }
+        .tree-line {
+            border-left: 2px solid #ddd;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌳 ÁRBOL DE LA VIDA 🌳</h1>
+        <h2 style="text-align: center; color: #666; margin-bottom: 40px;">Clasificación Taxonómica Completa</h2>
 
+        <div class="dominio">🦠 DOMINIO ARCHAEA</div>
+        <div class="caracteristicas">Procariotas extremófilos, pared celular sin peptidoglicano</div>
+        <div class="ejemplo">
+            <span class="cientifico">Methanobrevibacter smithii</span> - 
+            <span class="vulgar">Arqueobacteria metanógena intestinal</span>
+        </div>
+
+        <div class="dominio">🔬 DOMINIO BACTERIA</div>
+        <div class="caracteristicas">Procariotas con pared celular de peptidoglicano</div>
+        <div class="ejemplo">
+            <span class="cientifico">Escherichia coli</span> - 
+            <span class="vulgar">Bacteria intestinal común</span>
+        </div>
+
+        <div class="dominio">🧬 DOMINIO EUKARYA</div>
+        <div class="caracteristicas">Células con núcleo verdadero y orgánulos membranosos</div>
+
+        <div class="tree-line">
+            <div class="reino">🦠 REINO PROTOCTISTA</div>
+            
+            <div class="grupo">🌱 AUTÓTROFOS</div>
+            <div class="subgrupo">Dinoflagelados</div>
+            <div class="ejemplo">
+                <span class="cientifico">Noctiluca scintillans</span> - 
+                <span class="vulgar">Dinoflagelado bioluminiscente</span>
+            </div>
+            
+            <div class="subgrupo">Diatomeas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Thalassiosira pseudonana</span> - 
+                <span class="vulgar">Diatomea marina</span>
+            </div>
+            
+            <div class="subgrupo">Algas verdes</div>
+            <div class="ejemplo">
+                <span class="cientifico">Chlamydomonas reinhardtii</span> - 
+                <span class="vulgar">Alga verde unicelular</span>
+            </div>
+            
+            <div class="subgrupo">Algas pardas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Macrocystis pyrifera</span> - 
+                <span class="vulgar">Kelp gigante</span>
+            </div>
+            
+            <div class="subgrupo">Algas rojas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Porphyra umbilicalis</span> - 
+                <span class="vulgar">Alga nori</span>
+            </div>
+
+            <div class="grupo">🍽️ HETERÓTROFOS</div>
+            <div class="subgrupo">Afines a los animales</div>
+            
+            <div style="margin-left: 20px;">
+                <div class="subgrupo">Ciliados</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Paramecium caudatum</span> - 
+                    <span class="vulgar">Paramecio</span>
+                </div>
+                
+                <div class="subgrupo">Flagelados</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Trypanosoma brucei</span> - 
+                    <span class="vulgar">Tripanosoma de la enfermedad del sueño</span>
+                </div>
+                
+                <div class="subgrupo">Esporozoos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Plasmodium falciparum</span> - 
+                    <span class="vulgar">Parásito de la malaria</span>
+                </div>
+                
+                <div class="subgrupo">Ameboides</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Amoeba proteus</span> - 
+                    <span class="vulgar">Ameba común</span>
+                </div>
+            </div>
+
+            <div class="subgrupo">Afines a los hongos</div>
+            <div style="margin-left: 20px;">
+                <div class="ejemplo">
+                    <span class="cientifico">Physarum polycephalum</span> - 
+                    <span class="vulgar">Moho mucilaginoso acelular</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Dictyostelium discoideum</span> - 
+                    <span class="vulgar">Moho mucilaginoso celular</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Phytophthora infestans</span> - 
+                    <span class="vulgar">Oomiceto (Mildiú de la patata)</span>
+                </div>
+            </div>
+
+            <div class="reino">🍄 REINO FUNGI</div>
+            <div class="subgrupo">Levaduras</div>
+            <div class="ejemplo">
+                <span class="cientifico">Saccharomyces cerevisiae</span> - 
+                <span class="vulgar">Levadura de panadería</span>
+            </div>
+            
+            <div class="subgrupo">Zigomicetos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Rhizopus stolonifer</span> - 
+                <span class="vulgar">Moho negro del pan</span>
+            </div>
+            
+            <div class="subgrupo">Ascomicetos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Penicillium chrysogenum</span> - 
+                <span class="vulgar">Hongo productor de penicilina</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Morchella esculenta</span> - 
+                <span class="vulgar">Colmenilla</span>
+            </div>
+            
+            <div class="subgrupo">Basidiomicetos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Agaricus bisporus</span> - 
+                <span class="vulgar">Champiñón común</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Amanita muscaria</span> - 
+                <span class="vulgar">Matamoscas</span>
+            </div>
+
+            <div class="reino">🌿 REINO PLANTAE</div>
+            
+            <div class="grupo">🌱 BRIÓFITAS</div>
+            <div class="subgrupo">Hepáticas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Marchantia polymorpha</span> - 
+                <span class="vulgar">Hepática común</span>
+            </div>
+            
+            <div class="subgrupo">Antoceros</div>
+            <div class="ejemplo">
+                <span class="cientifico">Anthoceros punctatus</span> - 
+                <span class="vulgar">Antocero punteado</span>
+            </div>
+            
+            <div class="subgrupo">Musgos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Bryum argenteum</span> - 
+                <span class="vulgar">Musgo plateado</span>
+            </div>
+
+            <div class="grupo">🌿 PTERIDÓFITAS</div>
+            <div class="subgrupo">Licopodios</div>
+            <div class="ejemplo">
+                <span class="cientifico">Lycopodium clavatum</span> - 
+                <span class="vulgar">Licopodio común</span>
+            </div>
+            
+            <div class="subgrupo">Equisetos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Equisetum arvense</span> - 
+                <span class="vulgar">Cola de caballo</span>
+            </div>
+            
+            <div class="subgrupo">Helechos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Pteridium aquilinum</span> - 
+                <span class="vulgar">Helecho águila</span>
+            </div>
+
+            <div class="grupo">🌳 ESPERMATÓFITAS</div>
+            <div class="subgrupo">Gimnospermas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Pinus sylvestris</span> - 
+                <span class="vulgar">Pino silvestre</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Ginkgo biloba</span> - 
+                <span class="vulgar">Ginkgo</span>
+            </div>
+            
+            <div class="subgrupo">Angiospermas</div>
+            <div class="ejemplo">
+                <span class="cientifico">Rosa canina</span> - 
+                <span class="vulgar">Escaramujo</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Quercus robur</span> - 
+                <span class="vulgar">Roble común</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Triticum aestivum</span> - 
+                <span class="vulgar">Trigo común</span>
+            </div>
+
+            <div class="reino">🐾 REINO ANIMALIA</div>
+            
+            <div class="grupo">🦋 INVERTEBRADOS</div>
+            
+            <div class="subgrupo">Sin simetría - Poríferos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Spongilla lacustris</span> - 
+                <span class="vulgar">Esponja de agua dulce</span>
+            </div>
+
+            <div class="subgrupo">Simetría bilateral</div>
+            <div style="margin-left: 20px;">
+                <div class="subgrupo">Platelmintos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Planaria torva</span> - 
+                    <span class="vulgar">Planaria</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Taenia solium</span> - 
+                    <span class="vulgar">Tenia del cerdo</span>
+                </div>
+                
+                <div class="subgrupo">Nematodos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Caenorhabditis elegans</span> - 
+                    <span class="vulgar">Gusano nematodo modelo</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Ascaris lumbricoides</span> - 
+                    <span class="vulgar">Lombriz intestinal</span>
+                </div>
+                
+                <div class="subgrupo">Anélidos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Lumbricus terrestris</span> - 
+                    <span class="vulgar">Lombriz de tierra</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Hirudo medicinalis</span> - 
+                    <span class="vulgar">Sanguijuela medicinal</span>
+                </div>
+                
+                <div class="subgrupo">Moluscos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Helix pomatia</span> - 
+                    <span class="vulgar">Caracol de Borgoña (Gasterópodo)</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Mytilus edulis</span> - 
+                    <span class="vulgar">Mejillón común (Bivalvo)</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Octopus vulgaris</span> - 
+                    <span class="vulgar">Pulpo común (Cefalópodo)</span>
+                </div>
+                
+                <div class="subgrupo">Artrópodos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Cancer pagurus</span> - 
+                    <span class="vulgar">Buey de mar (Crustáceo)</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Latrodectus mactans</span> - 
+                    <span class="vulgar">Viuda negra (Arácnido)</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Scolopendra gigantea</span> - 
+                    <span class="vulgar">Escolopendra gigante (Miriápodo)</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Apis mellifera</span> - 
+                    <span class="vulgar">Abeja melífera (Insecto)</span>
+                </div>
+            </div>
+
+            <div class="subgrupo">Simetría radial</div>
+            <div style="margin-left: 20px;">
+                <div class="subgrupo">Cnidarios</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Aurelia aurita</span> - 
+                    <span class="vulgar">Medusa luna</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Actinia equina</span> - 
+                    <span class="vulgar">Anémona de mar</span>
+                </div>
+                
+                <div class="subgrupo">Equinodermos</div>
+                <div class="ejemplo">
+                    <span class="cientifico">Asterias rubens</span> - 
+                    <span class="vulgar">Estrella de mar común</span>
+                </div>
+                <div class="ejemplo">
+                    <span class="cientifico">Echinus esculentus</span> - 
+                    <span class="vulgar">Erizo de mar comestible</span>
+                </div>
+            </div>
+
+            <div class="grupo">🐠 VERTEBRADOS (FILO CHORDATA)</div>
+            
+            <div class="subgrupo">Agnatos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Petromyzon marinus</span> - 
+                <span class="vulgar">Lamprea marina</span>
+            </div>
+            
+            <div class="subgrupo">Peces</div>
+            <div class="ejemplo">
+                <span class="cientifico">Carcharodon carcharias</span> - 
+                <span class="vulgar">Tiburón blanco (Condrictio)</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Salmo salar</span> - 
+                <span class="vulgar">Salmón atlántico (Osteíctio)</span>
+            </div>
+            
+            <div class="subgrupo">Anfibios</div>
+            <div class="ejemplo">
+                <span class="cientifico">Rana temporaria</span> - 
+                <span class="vulgar">Rana común</span>
+            </div>
+            
+            <div class="subgrupo">Reptiles</div>
+            <div class="ejemplo">
+                <span class="cientifico">Lacerta agilis</span> - 
+                <span class="vulgar">Lagarto ágil</span>
+            </div>
+            
+            <div class="subgrupo">Aves</div>
+            <div class="ejemplo">
+                <span class="cientifico">Passer domesticus</span> - 
+                <span class="vulgar">Gorrión común</span>
+            </div>
+            
+            <div class="subgrupo">Mamíferos</div>
+            <div class="ejemplo">
+                <span class="cientifico">Homo sapiens</span> - 
+                <span class="vulgar">Ser humano</span>
+            </div>
+            <div class="ejemplo">
+                <span class="cientifico">Canis lupus</span> - 
+                <span class="vulgar">Lobo</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
